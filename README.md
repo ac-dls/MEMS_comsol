@@ -1,15 +1,15 @@
 # MEMS Portfolio — Electrostatically Actuated Cantilever: Squeeze-Film Damping & Thermal Qualification
 
-This repository documents my progression through a set of self-directed extensions to COMSOL's **Electrostatically Actuated Cantilever** application model (COMSOL Application Library, model 444), used as a starting point to build an original MEMS simulation portfolio.
+This repository documents my progress through a set of self-directed extensions to COMSOL's **Electrostatically Actuated Cantilever** application model (COMSOL Application Library, model 444), that I used as a starting point to build an original MEMS simulation portfolio.
 
-The base model provides a static electromechanical pull-in demo (Electrostatics + Solid Mechanics, coupled via Electromechanical Forces, with a Moving Mesh/ALE formulation in the air gap). The goal of this project is to extend that base model with additional physics that the original app does not include, turning it into a small-signal resonator characterization tool and, eventually, an environmental-qualification tool relevant to space-deployed MEMS.
+The base model provides a static electromechanical pull-in demo (Electrostatics + Solid Mechanics, coupled via Electromechanical Forces, with a Moving Mesh/ALE formulation in the air gap). The goal of this project is to extend that base model with additional physics that the original app does not include, turning it into a small-signal resonator characterization tool and, eventually, an environmental-qualification tool relevant to space-deployed MEMS, which is something I'm very interested at.
 
 ## Status
 
 | Enhancement | Status |
 |---|---|
-| **1 — Squeeze-film damping & dynamic frequency response** | ✅ Complete |
-| **2 — Thermal-electromechanical space-environment qualification** | 🔄 In progress |
+| **1 — Squeeze-film damping & dynamic frequency response** | Complete |
+| **2 — Thermal-electromechanical space-environment qualification** | In progress |
 
 ---
 
@@ -58,7 +58,7 @@ The base model provides a static electromechanical pull-in demo (Electrostatics 
 5. Study sequence: Stationary (Heat Transfer) → Stationary (Solid Mechanics + Electrostatics, inheriting thermal strain) → Parametric Sweep over ambient temperature across a representative range (e.g., -55 °C to +85 °C).
 6. Target result: pull-in voltage vs. temperature and resonance frequency vs. temperature, framed around whether the actuator stays within its designed operating window across the mission thermal environment, or drifts toward unintended pull-in — a realistic failure mode for space-deployed MEMS switches.
 
-*This section will be updated with implementation notes, debugging record, and results as the work progresses — following the same format as Enhancement 1 above.*
+*This section will be updated with implementation notes, debugging record, and results as I make progress — following the same format as Enhancement 1 above.*
 
 ---
 
